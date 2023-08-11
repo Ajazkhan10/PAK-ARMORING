@@ -6,46 +6,51 @@ import learnMore from "../../Assert/svg/learnMore.svg";
 const MainSection = () => {
   return (
     <div>
-      <mainsection className=" w-[390px] pb-[30px] flex justify-center items-center bg-[#1A1A1A] px-[30px] py-[30px] ">
-        <div className="w-[358px] flex flex-col justify-center items-center gap-[24px]">
-          <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[48px] normal-case font-bold leading-normal">
-            Every Features You Might Fall In Love
-          </h1>
-          <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
-            Here are several Features of BMW X Series That Inform you
-            specifically before you decide anything for this car.
-          </p>
-          <div className="flex flex-col items-start gap-[24px]">
-            <img src={bmw} alt="bmwImage" />
-            <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
-              BMW X MODELS
+      <mainsection className=" w-full pb-[30px] flex justify-center  mx-auto items-center bg-[#1A1A1A] px-[30px] py-[30px] lg:w-full lg:flex lg:flex-row ">
+        <div className="w-[358px] flex flex-col justify-center items-center gap-[24px] ">
+          <div className="lg:flex lg:justify-between lg:w-[1200px] items-start">
+            <h1 className="w-[358px] lg-[450px] text-[#fff] font-[Ubuntu] text-[48px] normal-case font-bold leading-normal">
+              Every Features You Might Fall In Love
             </h1>
             <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
-              The BMW X1 is the perfect vehicle for those who want to you
-              interpret driving pleasure in line with their own needs and wants.
+              Here are several Features of BMW X Series That Inform you
+              specifically before you decide anything for this car.
             </p>
           </div>
-          <div className="flex flex-col items-start gap-[24px]">
-            <img src={range} alt="rangeImage" />
-            <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
-              Range Rover{" "}
-            </h1>
-            <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
-              Range Rover sub-brands have been launched. In 2004, Land Rover
-              debuted the Range Rover Sport, based on the Land Rover Discovery
-              platform.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-[24px]">
-            <img src={toyota} alt="toyotaImage" />
-            <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
-              Toyota Truck{" "}
-            </h1>
-            <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
-              These Toyota trucks offer incredible standard features and a
-              stylish look without sacrificing performance and power. Build your
-              ideal truck today.
-            </p>
+          <div className="lg:flex  lg:justify-between lg:items-center lg:py-[80px] lg:gap-x-[80px]">
+            <div className="flex flex-col items-start gap-[24px] ">
+              <img src={bmw} alt="bmwImage" />
+              <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
+                BMW X MODELS
+              </h1>
+              <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
+                The BMW X1 is the perfect vehicle for those who want to you
+                interpret driving pleasure in line with their own needs and
+                wants.
+              </p>
+            </div>
+            <div className="flex flex-col items-start gap-[24px]">
+              <img src={range} alt="rangeImage" />
+              <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
+                Range Rover{" "}
+              </h1>
+              <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
+                Range Rover sub-brands have been launched. In 2004, Land Rover
+                debuted the Range Rover Sport, based on the Land Rover Discovery
+                platform.
+              </p>
+            </div>
+            <div className="flex flex-col items-start gap-[24px]">
+              <img src={toyota} alt="toyotaImage" />
+              <h1 className="w-[358px] text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
+                Toyota Truck{" "}
+              </h1>
+              <p className="w-[358px] text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6">
+                These Toyota trucks offer incredible standard features and a
+                stylish look without sacrificing performance and power. Build
+                your ideal truck today.
+              </p>
+            </div>
           </div>
           <div className="">
             <button
