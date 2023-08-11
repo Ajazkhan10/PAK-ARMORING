@@ -6,9 +6,9 @@ import dropDown from "../../Assert/svg/chevron-down.svg";
 const Navbar = () => {
   return (
     <>
-      <navbar className=" h-[80px] w-[100%]  bg-light_white flex justify-center items-center lg:w-full  lg:px-[80px] lg:py-[8px]  xl:px-[150px] md:w-full ">
-        <div className="h-[55.81396px] w-[100%] flex items-center  justify-between lg:w-[100%] lg:flex lg:justify-between lg:items-center md:flex md:justify-between md:items-center">
-          <div className="lg:hidden md:hidden">
+      <navbar className=" h-[80px]  w-full bg-[#fff]  flex  lg:px-[80px] lg:py-[8px]  mx-auto px-[80px]">
+        <div className="h-[55.81396px] w-full  flex items-center  justify-between lg:flex lg:justify-between lg:items-center md:flex md:justify-between ">
+          <div className="lg:hidden ">
             <img
               className="w-[24px] h-[24px]"
               src={phoneLogo}
@@ -17,11 +17,11 @@ const Navbar = () => {
           </div>
           <div className="lg:flex lg:justify-start lg:whitespace-nowrap lg:gap-[8px]">
             <img
-              className="w-[53px] h-[60px]"
+              className="w-[53px] h-[60px] mt-[20px]"
               src={mainLogo}
               alt="phone-Logo"
             />
-            <div className="lg:block hidden md:block">
+            <div className="lg:block hidden ">
               <h1 className="text-[#205228] font-Ubuntu text-[20px] not-italic font-bold leading-normal ">
                 PAK ARMORING (PVT) LTD.
               </h1>
@@ -33,17 +33,34 @@ const Navbar = () => {
           <div className="lg:hidden md:hidden">
             <img className="w-[24px] h-[8px]" src={groupLogo} alt="Logo" />
           </div>
-          <div className="hidden lg:block md:block">
+          <div className="hidden lg:block md:block relative">
             <ul className="flex justify-center items-center gap-[30px]">
-              <div className="flex gap-[4px] items-center">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
+              <div className="flex gap-[4px] items-center group/career">
+                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal ">
                   About
                 </li>
                 <button className="w-[13px] h-[13px]">
                   <img src={dropDown} alt="drop-down" />
                 </button>
+                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/career:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                </ul>
               </div>
-              <div className="flex gap-[4px] items-center">
+              <div className="flex gap-[4px] items-center group/product">
                 <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
                   Product
                 </li>
@@ -54,8 +71,25 @@ const Navbar = () => {
                     className="w-[13px] h-[13px]"
                   />
                 </button>
+                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/product:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                </ul>
               </div>
-              <div className="flex items-center gap-[4px]">
+              <div className="flex items-center gap-[4px] group/technology">
                 <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
                   Technology
                 </li>
@@ -66,8 +100,25 @@ const Navbar = () => {
                     className="w-[13px] h-[13px]"
                   />
                 </button>
+                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/technology:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                </ul>
               </div>
-              <div className="flex gap-[4px] items-center">
+              <div className="flex gap-[4px] items-center group/media">
                 <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
                   Media
                 </li>
@@ -78,8 +129,25 @@ const Navbar = () => {
                     className="w-[13px] h-[13px]"
                   />
                 </button>
+                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/media:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                </ul>
               </div>
-              <div className="flex items-center gap-[4px]">
+              <div className="flex items-center gap-[4px] group/faqs">
                 <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
                   FAQs
                 </li>
@@ -90,6 +158,23 @@ const Navbar = () => {
                     className="w-[13px] h-[13px]"
                   />
                 </button>
+                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/faqs:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
+                    Careers
+                  </li>
+                </ul>
               </div>
               <button className="text-light_white flex px-[40px] py-[12px] gap-[8px] items-center justify-center rounded-[4px] bg-[#205228] ">
                 Contact

@@ -1,88 +1,129 @@
 import React from "react";
 import logo from "../../Assert/svg/image.svg";
-import facebook from "../../Assert/svg/facebook.svg";
-import twitter from "../../Assert/svg/twitter.svg";
-import linkedin from "../../Assert/svg/akar-icons_linkedin-fill.svg";
-import whatsapp from "../../Assert/svg/WhatsApp - png.png";
+// import facebook from "../../Assert/svg/facebook.svg";
+// import twitter from "../../Assert/svg/twitter.svg";
+// import linkedin from "../../Assert/svg/akar-icons_linkedin-fill.svg";
+// import whatsapp from "../../Assert/svg/WhatsApp - png.png";
 const Footer = () => {
   return (
-    <div className="w-[390px] flex flex-col justify-center items-center gap-[40px] px-[30px] py-[30px]">
-      <div className="flex justify-center items-center gap-[16px]">
-        <img src={logo} alt="Logo" className="w-[62px] h-[70px]" />
-        <div className="flex flex-col justify-start whitespace-nowrap gap-[8px]">
-          <h1 className="text-[#000] font-Ubuntu text-[20px] not-italic font-bold leading-normal ">
-            PAK ARMORING (PVT) LTD.
-          </h1>
-          <p className="font-medium	 text-[#000] text-[12px] not-italic leading-normal">
-            ARMORED VEHICLES SPECIALIST
+    <div>
+      <section className="footer-main flex flex-col items-start gap-[40px] lg:flex-row  lg:gap-[120px]  bg-[#000] text-[#fff]  py-[80px] w-full">
+        <div className="footer_box   items-start">
+          <div className="logoSide flex gap-[20px] px-[80px] ">
+            <div className="logo_img">
+              <img src={logo} alt="logo" className="w-[62px] h-[70px] " />
+            </div>
+            <div className="text-[#fff] font-Ubuntu not-italic leading-normal ">
+              <h2 className="text-[20px] font-bold">Pak Armoring (PVT) LTD.</h2>
+              <h4 className="text-[12px] font-medium">
+                Armored Vehicles Specialist
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer_box flex flex-col gap-[30px] px-[80px]">
+          <h2 className="text-[20px] font-bold">About Company</h2>
+          <ul className="flex flex-col gap-[20px] px-[30px]">
+            <li>
+              <a href="aDd">Overview</a>
+            </li>
+            <li>
+              <a href="about-us">Company Profile</a>
+            </li>
+            <li>
+              <a href="ceo-message">CEO Message</a>
+            </li>
+            <li>
+              <a href="vision-and-mission">Mission &amp; Vision</a>
+            </li>
+            <li>
+              <a href="asfasd">Certifications</a>
+            </li>
+            <li>
+              <a href="fassfsa">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_box flex flex-col  gap-[30px] px-[80px]">
+          <h2 className="text-[20px] font-bold ">Products</h2>
+          <ul className="grid grid-rows-6 grid-flow-col gap-[20px] gap-x-[50px]  px-[30px]">
+            <li>
+              <a href="vips_inner?link=BMW">BMW X Series</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Range_Rover">Range Rover</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Toyota_Fortuner">Fortuner</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Kia_Sorento">Sorento</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Mercedes_Benz">Mercedez Benz</a>
+            </li>
+
+            <li>
+              <a href="vips_inner?link=Toyota_Corolla">Toyota Corolla</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Toyota_Camry">Toyota Camry</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Toyota_Vigo">Toyota Revo</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=HiAce">HiAc</a>
+            </li>
+            <li>
+              <a href="vips_inner?link=Coaster">Coaster</a>
+            </li>
+            <li>
+              <a href="MultiPurposeVehicles">Sagr APC &amp; UQAAB</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_box flex flex-col px-[80px]">
+          <h2 className="text-[20px] font-bold py-[30px] ">Office Address:</h2>
+          <p className="px-[30px]">
+            Plot No. 2/2a, Survey 86, Sector 24, Main Korangi Creek Road,
+            Karachi.
           </p>
+          <ul class="address px-[30px]">
+            <li class="flex_">
+              <span>
+                <i class="fas fa-phone-volume"></i>
+              </span>
+              <a href="tel:923039234333">0303 9234222 - 0303 9234333</a>
+            </li>
+            <li class="flex_">
+              <span>
+                <i class="fas fa-envelope"></i>
+              </span>
+              <a href="mailto:info@pakarmoring.com">info@pakarmoning.com</a>
+            </li>
+            <li class="flex_">
+              <span>
+                <i class="fa fa-globe"></i>
+              </span>
+              <a href="index.html">www.pakarmoning.com</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div>
-        <div className="flex flex-col gap-[40px]">
-          <h1 className="text-[#000] font-Ubuntu text-[16px] not-italic font-medium leading-normal">
-            Products
-          </h1>
-          <div className="grid grid-rows-6 grid-flow-col gap-x-[56px] gap-y-[16px] text-[#1A1A1A] font-Ubuntu text-[16px] not-italic font-normal leading-normal">
-            <p>BMW X Series</p>
-            <p>Range Rover</p>
-            <p>Fortuner</p>
-            <p>Mercedez Benz</p>
-            <p>Toyota Corolla</p>
-            <p>Toyota Camry</p>
-            <p>Toyota Revo</p>
-            <p>HiAc</p>
-            <p>Coaster</p>
-            <p>Sagr APC & UQAAb</p>
-          </div>
-          <div className="flex flex-col gap-[40px]">
-            <h1 className="text-[#000] font-Ubuntu text-[16px] not-italic font-medium leading-normal">
-              ProductsAbout Company
-            </h1>
-            <div className="grid grid-rows-3 grid-flow-col gap-x-[56px] gap-y-[16px] text-[#1A1A1A] font-Ubuntu text-[16px] not-italic font-normal leading-normal">
-              <p>Company Profile</p>
-              <p>Testimonial</p>
-              <p>CEO Message</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-[40px]">
-            <h1 className="text-[#000] font-Ubuntu text-[16px] not-italic font-medium leading-normal">
-              Office Address
-            </h1>
-            <div className="grid grid-rows-3 grid-flow-col gap-x-[56px] gap-y-[16px] text-[#1A1A1A] font-Ubuntu text-[16px] not-italic font-normal leading-normal">
-              <p>
-                Plot No. 2/2a, Survey 86, Sector 24, Main Korangi Creek Road,
-                Karachi.
-              </p>
-              <p>0303 9234222 - 0303 9234333</p>
-              <p>info@pakarmoning.com</p>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between w-[ 336.331px] items-center gap-[24px]">
-            <div className="flex  items-center gap-[24px]">
-              <img
-                src={facebook}
-                alt="facebook"
-                className="w-[24px] h-[24px]"
-              />
-              <img src={twitter} alt="twitter" className="w-[24px] h-[24px]" />
-              <img
-                src={linkedin}
-                alt="linkedin"
-                className="w-[24px] h-[24px]"
-              />
-              <img
-                src={whatsapp}
-                alt="whatsapp"
-                className="w-[24px] h-[24px]"
-              />
-            </div>
-            <p className="text-[#1A1A1A] font-Inter text-[14px] not-italic font-normal leading-normal">
-              Copyrights 2023 Pak Armoring All rights Reserved.
-            </p>
-          </div>
+      </section>
+      <section className="footerBottom flex mx-auto bg-secondary_gray text-[#fff]">
+        <div className="standard_2 flex_ spacebetween flex justify-between  mx-auto items-center">
+          <ul className="flex justify-between items-center mx-auto">
+            <li className="">
+              Copyrights 2021 <a href="index">Pak Armoring</a> All rights
+              Reserved.<a href="sxasd">| Disclaimer</a>
+              <a href="dasda">| Sitemap</a>
+            </li>
+
+            <li>Design and Develop by</li>
+          </ul>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
