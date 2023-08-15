@@ -7,13 +7,13 @@ const HeroSection = () => {
     <>
       <div className="block lg:hidden ">
         <div className="px-30px]  py-[40px] flex flex-col items-center gap-[40px]">
-          <div className="pt-6 pb-[209px] relative w-full ">
+          <div className="pt-6 pb-[209px] relative  ">
             <img
               src={car111222333}
               alt="car11122"
               className=" rounded-[16px] absolute top-0 left-0 w-full h-full  "
             />
-            <div className="relative text-[#000] flex flex-col justify-center items-center gap-[24px]">
+            <div className="relative text-[#000] grid text-center grid-cols-1 px-[30px] py-[30px] gap-[24px]">
               <h1 className="  text-[#000] font-Ubuntu text-center text-[32px] normal-case font-bold leading-normal  ">
                 MULTI-PUROPSE TACTICAL VEHICLES SUPERIOR 4X4
               </h1>
@@ -22,7 +22,7 @@ const HeroSection = () => {
               </p>
               <button
                 type="btn"
-                className="w-fit text-[#fff] bg-[#205228] flex justify-center items-center py-[12px] px-[40px] gap-[8px] rounded-[4px]"
+                className=" text-[#fff] bg-[#205228] flex justify-center items-center py-[12px] px-[40px] gap-[8px] rounded-[4px]"
               >
                 Contact
               </button>
@@ -56,11 +56,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className=" flex flex-col justify-center items-center px-[30px] py-[30px] ">
-              <img
-                src={car1}
-                alt="car1Logo"
-                className="w-[358.013px] h-[238.704px]"
-              />
+              <img src={car1} alt="car1Logo" className="object-scale-down" />
             </div>
           </div>
         </div>

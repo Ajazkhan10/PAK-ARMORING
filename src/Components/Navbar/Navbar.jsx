@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import mainLogo from "../../Assert/svg/image.svg";
 import groupLogo from "../../Assert/svg/Group.svg";
 import phoneLogo from "../../Assert/svg/phone.svg";
 import dropDown from "../../Assert/svg/chevron-down.svg";
+import crossManu from "../../Assert/svg/crossmanu.png";
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false);
+
+  const handelDropdown = () => {
+    setDropdown(!dropdown);
+  };
+
+  if (dropdown) {
+    if (typeof window !== "undefined") {
+      document.getElementsByTagName("body")[0].style.overflow = "hidden";
+    }
+  } else {
+    if (typeof window !== "undefined") {
+      document.getElementsByTagName("body")[0].style.overflow = "auto";
+    }
+  }
   return (
     <>
-      <navbar className=" h-[80px]  w-full bg-[#fff]  flex  lg:px-[80px] lg:py-[8px]  mx-auto px-[80px]">
-        <div className="h-[55.81396px] w-full  flex items-center  justify-between lg:flex lg:justify-between lg:items-center md:flex md:justify-between ">
-          <div className="lg:hidden ">
+      <navbar className=" h-[80px] w-full  bg-[#fff] grid grid-cols-1 px-[40px] mx-auto">
+        <div className=" flex   w-full lg:justify-between  justify-between mx-auto  items-center ">
+          <div className="lg:hidden  ">
             <img
-              className="w-[24px] h-[24px]"
+              className="lg:w-[24px] lg:h-[24px] w-[30px]"
               src={phoneLogo}
               alt="group-Logo"
             />
           </div>
-          <div className="lg:flex lg:justify-start lg:whitespace-nowrap lg:gap-[8px]">
+          <div className="flex ">
             <img
-              className="w-[53px] h-[60px] mt-[20px]"
+              className="lg:w-[53px] lg:h-[60px] w-full "
               src={mainLogo}
               alt="phone-Logo"
             />
@@ -30,11 +46,50 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="lg:hidden md:hidden">
-            <img className="w-[24px] h-[8px]" src={groupLogo} alt="Logo" />
+          <div className="lg:hidden">
+            <button onClick={handelDropdown}>
+              {dropdown ? (
+                <img
+                  className="w-[30px] object-scale-down h-[30px] font-bold "
+                  src={crossManu}
+                  alt="crossManu"
+                />
+              ) : (
+                <img
+                  className="w-[30px] object-scale-down h-[30px] font-bold "
+                  src={groupLogo}
+                  alt="groupLogo"
+                />
+              )}
+            </button>
+            <div
+              className={`w-full absolute z-20 temp-class left-[0px] top-[80px] bg-secondary_gray text-light_white  overflow-y-hidden
+               flex py-[30px]  ${dropdown ? "block" : "hidden"}`}
+            >
+              <ul className=" flex flex-col overflow-y-hidden  items-center mx-auto gap-[30px] ">
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">About</a>
+                </li>
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">Product</a>
+                </li>
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">Contact</a>
+                </li>
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">Technology</a>
+                </li>
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">FAQs</a>
+                </li>
+                <li className="hover:text-secondary_gray_400">
+                  <a href="/">Media</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="hidden lg:block md:block relative">
-            <ul className="flex justify-center items-center gap-[30px]">
+          <div className="hidden lg:block  relative ">
+            <ul className="flex lg:gap-[30px] ">
               <div className="flex gap-[4px] items-center group/career">
                 <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal ">
                   About
@@ -175,10 +230,10 @@ const Navbar = () => {
                     Careers
                   </li>
                 </ul>
+                <button className="text-light_white flex px-[12px] lg:px-[20px] py-[12px]  items-center justify-center rounded-[4px] bg-[#205228] ">
+                  Contact
+                </button>
               </div>
-              <button className="text-light_white flex px-[40px] py-[12px] gap-[8px] items-center justify-center rounded-[4px] bg-[#205228] ">
-                Contact
-              </button>
             </ul>
           </div>
         </div>
