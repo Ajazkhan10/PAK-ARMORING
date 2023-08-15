@@ -7,14 +7,14 @@ import Catalog from "./Components/Catalog/Catalog";
 
 function App() {
   return (
-    <>
+    <div className="font-Rg-Regular">
       <Navbar />
       <HeroSection />
       <MainSection />
       <IncrementDecrement />
       <Catalog />
       <Footer />
-    </>
+    </div>
   );
 }
 

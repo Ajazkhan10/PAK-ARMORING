@@ -14,7 +14,7 @@ const IncrementDecrement = () => {
         </h1>
         <div className=" flex flex-col gap-[32px] w-full">
           <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
+          <div className="flex flex-col  ">
             <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
               <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
                 Question goes here lorem ipsum dolor sit?
@@ -50,7 +50,7 @@ const IncrementDecrement = () => {
             </div>
           </div>
           <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
+          <div className="flex flex-col">
             <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
               <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
                 Question goes here lorem ipsum dolor sit?
@@ -86,7 +86,7 @@ const IncrementDecrement = () => {
             </div>
           </div>
           <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
+          <div className="flex flex-col  ">
             <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
               <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
                 Question goes here lorem ipsum dolor sit?
@@ -122,7 +122,7 @@ const IncrementDecrement = () => {
             </div>
           </div>
           <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
+          <div className="flex flex-col  ">
             <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
               <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
                 Question goes here lorem ipsum dolor sit?
