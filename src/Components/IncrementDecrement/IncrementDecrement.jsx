@@ -1,165 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
 import MinusIcon from "../../Assert/svg/Minus-Icon.svg";
 import PlusIcon from "../../Assert/svg/icons_plus.svg";
+import { Faqs } from "./Faqs";
 const IncrementDecrement = () => {
-  const [increase, setIncrese] = useState(false);
-  const handleOpen = () => {
-    setIncrese(!increase);
-  };
+  const FaqsPlusMinus = [
+    {
+      id: 1,
+      head: "Who is Pak Armoring (Pvt) Ltd.?",
+      para: "Pak Armoring (Pvt) Ltd. (Pak Armoring) is a premier vehicle armoring company that armors all major makes and models of cars and SUV’s while maintaining the vehicle’s original appearance and performance. Since beginning operations over 10 years ago. Pak Armoring has produced in excess of 100 armored passenger vehicles. By using proprietary armoring designs and installation techniques as well as the latest lightweight armoring materials. Pak Armoring provides the most technologically advanced protected vehicles available. These vehicles have been delivered to heads of state, corporate executives, celebrities, religious leaders, and civilian contractors all over the world.",
+    },
+    {
+      id: 2,
+      head: "Can any vehicle be armored?",
+      para: "Yes. Some vehicles, however, are more conductive to be armored than others. Again, please call the experts at Pak Armoring to discuss your specific needs.",
+    },
+    {
+      id: 3,
+      head: "What parts of a vehicle get armored?",
+      para: "The purpose of armoring a car is to protect the passengers. Towards that end, armor engineers focus on the occupants first by creating a cocoon of protection by enveloping the passenger cabin. Pak Armoring armors the entire passenger compartment, the glass, floors, pillar posts, roofs, doors – thus providing a maximum coverage of protection for vehicle passengers. In addition, other areas (battery, fuel tank, tires, ECM module, etc.) of the vehicle are, or can be protected.",
+    },
+    {
+      id: 4,
+      head: "How long will it take to armor my vehicle?",
+      para: "Our delivery times currently vary from 45 to 60 working days on the majority of vehicle models. Pak Armoring is able to accomplish this due to the volume of vehicles being armored and by keeping in stock armor components for most of the popular luxury vehicles.",
+    },
+  ];
+
   return (
-    <div>
-      <div className=" bg-[#FFF]  px-[30px] py-[30px] flex flex-col items-start gap-[48px]  ">
-        <h1 className="  flex items-start justify-start text-[##1A1A1A] text-[34px] font-Montserrat normal-case font-bold leading-normal">
-          FAQs
-        </h1>
-        <div className=" flex flex-col gap-[32px] w-full">
-          <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
-            <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
-              <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
-                Question goes here lorem ipsum dolor sit?
-              </h1>
-              <button onClick={handleOpen}>
-                {increase ? (
-                  <img
-                    src={MinusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                ) : (
-                  <img
-                    src={PlusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                )}
-              </button>
-            </div>
-            <div className="flex flex-col mx-auto ">
-              {increase ? (
-                <p className="text-base not-italic text-[24px] leading-6 font-normal	text-[#656970] ">
-                  Our audit services are tailored to your operations, risk, and
-                  growth objectives and are conducted with the highest quality
-                  assurance and technical excellence. By focusing on critical
-                  areas of your business, we ensure a seamless, streamlined
-                  audit process that produces valuable data.
-                </p>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
-            <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
-              <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
-                Question goes here lorem ipsum dolor sit?
-              </h1>
-              <button onClick={handleOpen}>
-                {increase ? (
-                  <img
-                    src={MinusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                ) : (
-                  <img
-                    src={PlusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                )}
-              </button>
-            </div>
-            <div className="flex flex-col mx-auto ">
-              {increase ? (
-                <p className="text-base not-italic text-[24px] leading-6 font-normal	text-[#656970] ">
-                  Our audit services are tailored to your operations, risk, and
-                  growth objectives and are conducted with the highest quality
-                  assurance and technical excellence. By focusing on critical
-                  areas of your business, we ensure a seamless, streamlined
-                  audit process that produces valuable data.
-                </p>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
-            <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
-              <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
-                Question goes here lorem ipsum dolor sit?
-              </h1>
-              <button onClick={handleOpen}>
-                {increase ? (
-                  <img
-                    src={MinusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                ) : (
-                  <img
-                    src={PlusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                )}
-              </button>
-            </div>
-            <div className="flex flex-col mx-auto ">
-              {increase ? (
-                <p className="text-base not-italic text-[24px] leading-6 font-normal	text-[#656970] ">
-                  Our audit services are tailored to your operations, risk, and
-                  growth objectives and are conducted with the highest quality
-                  assurance and technical excellence. By focusing on critical
-                  areas of your business, we ensure a seamless, streamlined
-                  audit process that produces valuable data.
-                </p>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className=" h-[1px] bg-[#CCC]"></div>
-          <div className="flex flex-col  gap-[32px]">
-            <div className="flex justify-between items-center w-full  text-[#1A1A1A]">
-              <h1 className="font-Montserrat text-[18px] font-bold normal-case shrink-0 leading-[28px]">
-                Question goes here lorem ipsum dolor sit?
-              </h1>
-              <button onClick={handleOpen}>
-                {increase ? (
-                  <img
-                    src={MinusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                ) : (
-                  <img
-                    src={PlusIcon}
-                    alt="PlusIcon"
-                    className="w-[24px] h-[24px] shrink-0 text-[#205228]"
-                  />
-                )}
-              </button>
-            </div>
-            <div className="flex flex-col mx-auto ">
-              {increase ? (
-                <p className="text-base not-italic text-[24px] leading-6 font-normal	text-[#656970] ">
-                  Our audit services are tailored to your operations, risk, and
-                  growth objectives and are conducted with the highest quality
-                  assurance and technical excellence. By focusing on critical
-                  areas of your business, we ensure a seamless, streamlined
-                  audit process that produces valuable data.
-                </p>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className=" h-[1px] bg-[#CCC]"></div>
-        </div>
-      </div>
+    <div className="w-full px-[80px] my-[40px] flex flex-col gap-[30px]">
+      <h1 className="text-[30px] font-bold">FAQs</h1>
+      {FaqsPlusMinus.map((node) => {
+        return <Faqs {...node} MinusIcon={MinusIcon} PlusIcon={PlusIcon} />;
+      })}
     </div>
   );
 };

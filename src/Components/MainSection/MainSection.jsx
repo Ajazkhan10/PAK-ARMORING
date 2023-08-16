@@ -6,24 +6,20 @@ import learnMore from "../../Assert/svg/learnMore.svg";
 const MainSection = () => {
   return (
     <div>
-      <mainsection className="grid  pb-[30px] justify-center items-center  bg-[#1A1A1A] px-[30px] py-[30px]  ">
+      <mainsection className="flex flex-col pb-[30px] justify-center items-center  bg-[#1A1A1A]  px-[80px] py-[30px]  ">
         <div className=" flex flex-col justify-center items-center gap-[24px] ">
-          <div className="flex flex-col lg:flex-row justify-between">
-            <h1 className="  text-[#fff] font-[Ubuntu] text-[48px] normal-case font-bold leading-normal lg:w-[40%]">
+          <div className="w-full flex  flex-col justify-center items-center">
+            <h1 className="  text-[#fff] font-[Ubuntu] text-[48px] normal-case font-bold leading-normal ">
               Every Features You Might Fall In Love
             </h1>
-            <p className=" text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6 lg:w-[40%]">
+            <p className=" text-[#fff] font-[Inter] text-[16px] normal-case font-normal leading-6 ">
               Here are several Features of BMW X Series That Inform you
               specifically before you decide anything for this car.
             </p>
           </div>
           <div className="grid  mx-auto sm:grid-cols-2 lg:grid-cols-3 py-[30px] gap-[30px] ">
             <div className="flex flex-col gap-[24px]">
-              <img
-                src={bmw}
-                alt="bmwImage"
-                className="lg:w-[270px] lg:h-[300px] w-full"
-              />
+              <img src={bmw} alt="bmwImage" className=" w-full" />
               <h1 className=" text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
                 BMW X MODELS
               </h1>
@@ -34,11 +30,7 @@ const MainSection = () => {
               </p>
             </div>
             <div className="flex flex-col  gap-[24px]">
-              <img
-                src={range}
-                alt="rangeImage"
-                className="lg:w-[270px] lg:h-[300px]  w-full"
-              />
+              <img src={range} alt="rangeImage" className=" w-full" />
               <h1 className=" text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
                 Range Rover
               </h1>
@@ -49,11 +41,7 @@ const MainSection = () => {
               </p>
             </div>
             <div className="flex flex-col  gap-[24px]">
-              <img
-                src={toyota}
-                alt="toyotaImage"
-                className="lg:w-[270px] lg:h-[300px]  w-full"
-              />
+              <img src={toyota} alt="toyotaImage" className=" w-full" />
               <h1 className=" text-[#fff] font-[Ubuntu] text-[24px] normal-case font-medium leading-6">
                 Toyota Truck
               </h1>
@@ -64,12 +52,12 @@ const MainSection = () => {
               </p>
             </div>
           </div>
-          <div className="">
+          <div className="flex items-start justify-start w-full">
             <button
-              className="flex justify-center items-center w-[367px] gap-[24px] py-[12px] px-[24px] rounded-[25px] border border-[#fff] "
+              className="flex justify-center items-center w-[367px] gap-[24px] py-[12px] px-[24px] rounded-[25px] border border-[#fff]  text-light_white bg-[#155214]  "
               type="btn"
             >
-              <p className="text-[#fff] font-[Ubuntu] text-[16px] normal-case font-medium leading-normal">
+              <p className="text-[#fff] font-[Ubuntu] text-[16px] normal-case font-medium leading-normal hover:text-[#ffd257]">
                 Learn More
               </p>
               <img

@@ -6,17 +6,17 @@ import React from "react";
 // import whatsapp from "../../Assert/svg/WhatsApp - png.png";
 const Footer = () => {
   return (
-    <div>
-      <section className=" bg-secondary_gray_300 text-light_white grid  lg:grid-cols-4 py-[30px] px-[30px]">
-        <div className="flex flex-col items-start">
+    <>
+      <section className=" bg-secondary_gray_300 text-light_white grid lg:grid-cols-4  text-center lg:text-left  py-[30px] px-[80px] gap-[30px]">
+        <div className="flex flex-col  lg:items-start items-center">
           <h2 className="text-[20px] font-bold">Pak Armoring (PVT) LTD.</h2>
-          <h4 className="text-[12px] font-medium">
+          <h4 className="text-[16px] font-medium">
             Armored Vehicles Specialist
           </h4>
         </div>
         <div>
           <h2 className="text-[20px] font-bold pb-[30px]">About Company</h2>
-          <ul className="flex flex-col gap-[10px] ">
+          <ul className="flex flex-col gap-[10px]  ">
             <li>
               <a href="aDd">Overview</a>
             </li>
@@ -98,7 +98,7 @@ const Footer = () => {
           </ul>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

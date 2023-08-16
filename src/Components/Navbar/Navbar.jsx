@@ -4,6 +4,9 @@ import groupLogo from "../../Assert/svg/Group.svg";
 import phoneLogo from "../../Assert/svg/phone.svg";
 import dropDown from "../../Assert/svg/chevron-down.svg";
 import crossManu from "../../Assert/svg/crossmanu.png";
+import emailIcon from "../../Assert/svg/Email.svg";
+import PhoneIcon from "../../Assert/svg/phoneIcon.svg";
+// import { Button } from "../../Extra/Button";
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
 
@@ -21,7 +24,14 @@ const Navbar = () => {
     }
   }
   return (
-    <>
+    <div div className="fixed w-full z-20 top-[0px]">
+      <div className="hidden py-[6px] w-full px-[80px] lg:inline-flex justify-end items-start bg-[#155214] text-[#fff] gap-[24px]">
+        <img src={PhoneIcon} alt="PnoneIcon" />
+        <p>03039234222 | 0303 9234333</p>
+
+        <img src={emailIcon} alt="emailIcon" />
+        <p>info@pakarmoring.com</p>
+      </div>
       <navbar className=" h-[80px] w-full  bg-[#fff] grid grid-cols-1 px-[40px] mx-auto">
         <div className=" flex   w-full lg:justify-between  justify-between mx-auto  items-center ">
           <div className="lg:hidden  ">
@@ -31,7 +41,7 @@ const Navbar = () => {
               alt="group-Logo"
             />
           </div>
-          <div className="flex ">
+          <div className="flex gap-[30px] ">
             <img
               className="lg:w-[53px] lg:h-[60px] w-full "
               src={mainLogo}
@@ -91,154 +101,118 @@ const Navbar = () => {
           <div className="hidden lg:block  relative ">
             <ul className="flex lg:gap-[30px] ">
               <div className="flex gap-[4px] items-center group/career">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal ">
-                  About
+                <li className="font-Inter text-[#000] text-[16px] hover:text-[#ffd257]  not-italic font-normal leading-normal ">
+                  About Us
                 </li>
-                <button className="w-[13px] h-[13px]">
+                <button className="w-[13px] h-[80px]">
                   <img src={dropDown} alt="drop-down" />
                 </button>
-                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/career:block flex-col gap-4 ">
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                <ul className="bg-[#155214] top-[80px]   w-[200px] hidden absolute py-[10px] group-hover/career:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    About Us
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Mission & Vision
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Message CEO
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Our Team
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px] hover:text-[#ffd257]  hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Our Client
                   </li>
                 </ul>
               </div>
-              <div className="flex gap-[4px] items-center group/product">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
+              <div className="flex gap-[4px]  items-center group/product">
+                <li className="font-Inter text-[#000] hover:text-[#ffd257]   text-[16px] not-italic font-normal leading-normal">
                   Product
                 </li>
                 <button>
                   <img
                     src={dropDown}
                     alt="drop-down"
-                    className="w-[13px] h-[13px]"
+                    className="w-[13px] h-[80px]"
                   />
                 </button>
-                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/product:block flex-col gap-4 ">
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                <ul className="bg-[#155214] top-[80px]   w-[200px]  hidden absolute  py-[10px] group-hover/product:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    ViPs
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Law in Forces
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Multi Perpose Vehicle
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Cash And Transit
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Guard Posts
                   </li>
                 </ul>
               </div>
               <div className="flex items-center gap-[4px] group/technology">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
+                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal hover:text-[#ffd257]  ">
                   Technology
                 </li>
                 <button>
                   <img
                     src={dropDown}
                     alt="drop-down"
-                    className="w-[13px] h-[13px]"
+                    className="w-[13px] h-[80px]"
                   />
                 </button>
-                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/technology:block flex-col gap-4 ">
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                <ul className="bg-[#155214] top-[80px] w-[200px] hidden absolute py-[10px] group-hover/technology:block flex-col gap-4 ">
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    Tranparent armor
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257]  cursor-pointer  text-[#fff]  text-center">
+                    SUSPENSION
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] cursor-pointer  text-[#fff]  text-center">
+                    BRACKES
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] hover:text-[#ffd257]cursor-pointer  text-[#fff]  text-center">
+                    FLOOR PROTICTION
                   </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
+                  <div className=" h-[1px] bg-[#455f4b] px-[30px] "></div>
+                  <li className="relative mx-auto font-sans py-[10px]  hover:text-[#ffd257] cursor-pointer  text-[#fff]  text-center">
+                    HINGES
                   </li>
                 </ul>
               </div>
               <div className="flex gap-[4px] items-center group/media">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
+                <li className="font-Inter cursor-pointer hover:text-[#ffd257] text-[#000] text-[16px] not-italic font-normal leading-normal">
                   Media
                 </li>
-                <button>
-                  <img
-                    src={dropDown}
-                    alt="drop-down"
-                    className="w-[13px] h-[13px]"
-                  />
-                </button>
-                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/media:block flex-col gap-4 ">
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                </ul>
               </div>
               <div className="flex items-center gap-[4px] group/faqs">
-                <li className="font-Inter text-[#000] text-[16px] not-italic font-normal leading-normal">
+                <li className="font-Inter cursor-pointer hover:text-[#ffd257]  text-[#000] text-[16px] not-italic font-normal leading-normal">
                   FAQs
                 </li>
-                <button>
-                  <img
-                    src={dropDown}
-                    alt="drop-down"
-                    className="w-[13px] h-[13px]"
-                  />
-                </button>
-                <ul className="bg-secondary_gray w-[180px] hidden absolute top-[35px]  py-[20px] group-hover/faqs:block flex-col gap-4 ">
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                  <li className="relative mx-auto font-sans hover:text-secondary_gray_400 cursor-pointer  text-[#fff]  text-center">
-                    Careers
-                  </li>
-                </ul>
-                <button className="text-light_white flex px-[12px] lg:px-[20px] py-[12px]  items-center justify-center rounded-[4px] bg-[#205228] ">
-                  Contact
-                </button>
               </div>
+              <button className=" w-[150px] h-[50px] mt-[20px] ml-[10px] text-light_white bg-[#155214] hover:text-[#ffd257] flex px-[4px]   items-center justify-center rounded-[4px] bg-secondary_green ">
+                Contact
+              </button>
             </ul>
           </div>
         </div>
       </navbar>
-    </>
+    </div>
   );
 };
 
