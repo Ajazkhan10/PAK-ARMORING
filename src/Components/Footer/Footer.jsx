@@ -6,8 +6,8 @@ import React from "react";
 // import whatsapp from "../../Assert/svg/WhatsApp - png.png";
 const Footer = () => {
   return (
-    <>
-      <section className=" bg-secondary_gray_300 text-light_white grid lg:grid-cols-4  text-center lg:text-left  py-[30px] px-[80px] gap-[30px]">
+    <div className="bg-secondary_gray_300">
+      <section className="  text-light_white  mx-auto max-w-[1512px] grid lg:grid-cols-4 md:grid-cols-3  text-center lg:text-left  py-[40px] px-[80px] gap-[80px]">
         <div className="flex flex-col  lg:items-start items-center">
           <h2 className="text-[20px] font-bold">Pak Armoring (PVT) LTD.</h2>
           <h4 className="text-[16px] font-medium">
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="text-[20px] font-bold pb-[30px]">About Company</h2>
-          <ul className="flex flex-col gap-[10px]  ">
+          <ul className="flex flex-col gap-[5px]  ">
             <li>
               <a href="aDd">Overview</a>
             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="text-[20px] font-bold pb-[30px] ">Overview</h2>
-          <ul className="flex flex-col gap-[10px] ">
+          <ul className="flex flex-col gap-[5px] ">
             <li>
               <a href="about-us">Company Profile</a>
             </li>
@@ -63,7 +63,7 @@ const Footer = () => {
             Plot No. 2/2a, Survey 86, Sector 24, Main Korangi Creek Road,
             Karachi.
           </p>
-          <ul class="address gap-[10px] ">
+          <ul class="address gap-[5px] ">
             <li class="flex_">
               <span>
                 <i class="fas fa-phone-volume"></i>
@@ -98,7 +98,7 @@ const Footer = () => {
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

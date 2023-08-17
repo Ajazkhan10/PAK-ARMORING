@@ -27,11 +27,13 @@ const IncrementDecrement = () => {
   ];
 
   return (
-    <div className="w-full px-[80px] my-[40px] flex flex-col gap-[30px]">
-      <h1 className="text-[30px] font-bold">FAQs</h1>
-      {FaqsPlusMinus.map((node) => {
-        return <Faqs {...node} MinusIcon={MinusIcon} PlusIcon={PlusIcon} />;
-      })}
+    <div className="bg-[#dadada]">
+      <div className="w-full px-[80px] py-[40px] flex flex-col gap-[30px]  mx-auto max-w-[1512px]">
+        <h1 className="text-[30px] font-bold">FAQs</h1>
+        {FaqsPlusMinus.map((node) => {
+          return <Faqs {...node} MinusIcon={MinusIcon} PlusIcon={PlusIcon} />;
+        })}
+      </div>
     </div>
   );
 };

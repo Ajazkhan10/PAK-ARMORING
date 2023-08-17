@@ -5,8 +5,8 @@ import toyota from "../../Assert/images/toyota.png";
 import learnMore from "../../Assert/svg/learnMore.svg";
 const MainSection = () => {
   return (
-    <div>
-      <mainsection className="flex flex-col pb-[30px] justify-center items-center  bg-[#1A1A1A]  px-[80px] py-[30px]  ">
+    <div className="bg-[#1A1A1A]">
+      <mainsection className="flex mx-auto max-w-[1512px] flex-col pb-[30px] justify-center items-center    px-[80px] py-[30px]  ">
         <div className=" flex flex-col justify-center items-center gap-[24px] ">
           <div className="w-full flex  flex-col justify-center items-center">
             <h1 className="  text-[#fff] font-[Ubuntu] text-[48px] normal-case font-bold leading-normal ">

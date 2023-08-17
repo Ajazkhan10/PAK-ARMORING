@@ -6,8 +6,8 @@ import { Button } from "../../Extra/Button";
 
 const HeroSection = () => {
   return (
-    <>
-      <div className=" relative  w-full h-[600px] my-[40px]">
+    <div className="bg-[#000] bg-opacity-10">
+      <div className=" relative  w-full h-[600px] my-[40px] mx-auto max-w-[1512px]">
         <div className="block lg:hidden">
           <img
             src={car112233}
@@ -22,7 +22,7 @@ const HeroSection = () => {
             className="  absolute  w-full h-full  "
           />
         </div>
-        <div className="relative text-[#ffffff]  bg-[#000] bg-opacity-40 w-full h-full justify-center px-[80px] text-center flex flex-col gap-[24px] mx-auto">
+        <div className="relative text-[#ffffff]   max-w-[1512px] bg-[#000] bg-opacity-40 w-full h-full justify-center px-[80px] text-center flex flex-col gap-[24px] mx-auto">
           <h1 className="  font-Ubuntu  text-[32px] normal-case font-bold leading-normal  ">
             MULTI-PUROPSE TACTICAL VEHICLES SUPERIOR 4X4
           </h1>
@@ -32,7 +32,7 @@ const HeroSection = () => {
           <Button label="Contact" />
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row  justify-between gap-[30px] px-[80px] py-[40px]">
+      <div className="w-full flex flex-col lg:flex-row  mx-auto max-w-[1512px] justify-between gap-[30px] px-[80px] py-[40px]">
         <div className="flex justify-between  flex-col gap-[24px] w-full lg:w-1/2 ">
           <h1 className="text-[#1A1A1A] font-Ubuntu text-[30px] normal-case font-bold leading-[36px]">
             ARMORED VEHICLE
@@ -57,7 +57,7 @@ const HeroSection = () => {
           <img src={car1} alt="car1Logo" className="w-full " />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
